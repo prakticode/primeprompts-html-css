@@ -5,7 +5,7 @@
 @import url("sections/main.css");
 @import url("sections/footer.css");
 
-@import url("responsive.css");  
+/* @import url("responsive.css");   */
 
 :root {
     --roboto: "Roboto", sans-serif;
