@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__auth {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main__features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
