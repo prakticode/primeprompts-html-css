@@ -7,11 +7,13 @@
 .main__container {
     width: 100%;
     max-width: 1120px;
-    padding: 20px 10px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
+    padding: 20px 10px;
 }
 
 .main__hero {
@@ -22,35 +24,36 @@
     gap: 24px;
 }
 
-.main__hero h1 {
+.main__hero-title {
     font-size: var(--headline-font-size);
     font-weight: var(--headline-font-weight);
 }
 
-.main__hero p {
+.main__hero-description {
     font-size: var(--subheadline-font-size);
     font-weight: var(--subheadline-font-weight);
 }
 
-.main__hero button {
+.main__hero-button {
     padding: 10px 15px;
+    font-size: var(--body-font-size);
     background-color: rgb(var(--blue-color));
     color: rgb(var(--secondary-color));
     border: none;
     border-radius: 10px;
     transition: all 300ms;
-    font-size: var(--body-font-size);
+    cursor: pointer;
 }
 
-.main__hero button:hover {
-    cursor: pointer;
+.main__hero-button:hover {
     background-color: rgba(var(--blue-color), 0.8);
 }
 
 .main__features {
     width: 100%;
-    gap: 16px;
+
     display: grid;
+    gap: 16px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -58,28 +61,32 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    gap: 20px;
     border-radius: 10px;
     color: rgb(var(--secondary-color));
-    gap: 20px;
 }
 
-.main__feature img {
+.main__feature-icon {
     max-width: 50px; 
     height: auto;
 }
 
-.main__feature h3 {
+.main__feature-title {
     font-size: var(--subheadline-font-size);
 }
 
-.main__feature:nth-child(1) {
+.main__feature-description {
+    font-size: var(--body-font-size);
+}
+
+.main__feature--add {
     background-color: rgb(var(--red-color));
 }
 
-.main__feature:nth-child(2) {
+.main__feature--sort {
     background-color: rgb(var(--yellow-color));
 }
 
-.main__feature:nth-child(3) {
+.main__feature--manage {
     background-color: rgb(var(--green-color));
 }
