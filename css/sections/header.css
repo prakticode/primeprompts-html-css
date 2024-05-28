@@ -26,6 +26,11 @@
     gap: 14px;
 }
 
+.header__logo-img {
+    width: 100px;
+    height: auto;
+}
+
 .header__logo-title {
     font-size: var(--subheadline-font-size);
 }
