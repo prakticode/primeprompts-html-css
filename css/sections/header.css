@@ -20,27 +20,27 @@
     padding: 0 10px;
 }
 
-.header__logo {
+.nav__logo {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-.header__logo-img {
+.nav__logo-img {
     width: 100px;
     height: auto;
 }
 
-.header__logo-title {
+.nav__logo-title {
     font-size: var(--subheadline-font-size);
 }
 
-.header__auth {
+.nav__auth {
     display: flex;
     gap: 24px;
 }
 
-.header__auth-button {
+.nav__auth-button {
     padding: 10px;
     font-size: var(--body-font-size);
     border: none;
@@ -49,20 +49,20 @@
     cursor: pointer;
 }
 
-.header__auth-button--signin {
+.nav__auth-button--signin {
     background-color: transparent;
 }
 
-.header__auth-button--signin:hover {
+.nav__auth-button--signin:hover {
     background-color: #DDDDDD;
 }
 
-.header__auth-button--signup {
+.nav__auth-button--signup {
     padding: 10px 20px;
     background-color: rgb(var(--primary-color));
     color: rgb(var(--secondary-color));
 }
 
-.header__auth-button--signup:hover {
+.nav__auth-button--signup:hover {
     background-color: rgba(var(--primary-color), 0.6);
 }
