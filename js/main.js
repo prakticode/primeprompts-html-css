@@ -1,16 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
+const handleMobileMenu = () => {
     const navMenuMobile = document.getElementById("navMobileMenu");
     const mobileMenu = document.getElementById("mobileMenu");
     const mobileMenuClose = document.getElementById("mobileMenuClose");
 
-    navMenuMobile.addEventListener("click", () => {
+    const openMenu = () => {
         mobileMenu.classList.add("mobile-menu--open");
-    });
+        document.body.classList.add("no-scroll");
+    };
 
-    mobileMenuClose.addEventListener("click", () => {
+    const closeMenu = () => {
         mobileMenu.classList.remove("mobile-menu--open");
-    });
+        document.body.classList.remove("no-scroll");
+    };
 
+    navMenuMobile.addEventListener("click", openMenu);
+    mobileMenuClose.addEventListener("click", closeMenu);
+};
+
+const animateMainContent = () => {
     const animateElement = (element, delay = 0, transform = false) => {
         element.style.opacity = 0;
         if (transform) {
@@ -42,4 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             animateElement(element, index * 200, item.transform);
         }
     });
-});
+};
+
+handleMobileMenu();
+animateMainContent();
