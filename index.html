@@ -20,11 +20,19 @@
                 <button type="button" class="nav__auth-button nav__auth-button--signin">Connexion</button>
                 <button type="button" class="nav__auth-button nav__auth-button--signup">Essayer PrimePrompts</button>
             </div>
-            <div class="nav__menu-mobile">
+            <div class="nav__mobile-menu" id="navMobileMenu">
                 <img src="assets/menu.svg" alt="Menu">
             </div>
         </nav>
     </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="mobileMenuClose">&times;</button>
+        <nav class="mobile-menu__nav">
+            <button type="button" class="nav__auth-button nav__auth-button--signin">Connexion</button>
+            <button type="button" class="nav__auth-button nav__auth-button--signup">Essayer PrimePrompts</button>
+        </nav>
+    </div>
     
 
     <main class="main">
@@ -102,6 +110,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

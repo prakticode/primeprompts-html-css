@@ -7,7 +7,7 @@
         display: none;
     }
 
-    .nav__menu-mobile {
+    .nav__mobile-menu {
         display: block;
         cursor: pointer;
     }

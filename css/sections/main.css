@@ -96,3 +96,17 @@
 .main__feature--manage {
     background-color: rgb(var(--green-color));
 }
+
+
+.main__hero-title,
+.main__hero-description,
+.main__hero-mobile-description,
+.main__hero-button,
+.main__feature {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-out;
+}
+
+.main__feature {
+    transform: translateY(20px);
+}
