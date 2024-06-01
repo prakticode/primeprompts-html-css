@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 30px;
     
     padding: 20px 10px;
 }
@@ -29,9 +30,14 @@
     font-weight: var(--headline-font-weight);
 }
 
-.main__hero-description {
+.main__hero-description,
+.main__hero-mobile-description {
     font-size: var(--subheadline-font-size);
     font-weight: var(--subheadline-font-weight);
+}
+
+.main__hero-mobile-description {
+    display: none;
 }
 
 .main__hero-button {
